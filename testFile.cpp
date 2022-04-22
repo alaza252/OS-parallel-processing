@@ -9,13 +9,18 @@ int main()
     string fileName;
     cout<<"FileName: "<<endl;
     cin>>fileName;
-    cout<<fileName<<endl;
     userFile.open(fileName);
-    cout<<"this worked"<<endl;
-    cout<<userFile.is_open();
-    if(userFile.is_open())
+    cout<<str(userFile.is_open());
+    string line;
+    if(fileName.is_open())
     {
-        userFile.close();
+        cout<<"inside if loop"<<endl;
+        while( getline (userFile,line))
+        {
+            cout<<line<<'\n';
+        }
+        fileName.close();
+        cout<<"file closed"<<endl;
     }
     return 0;
 }
