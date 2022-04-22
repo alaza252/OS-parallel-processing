@@ -9,7 +9,7 @@ int main()
     string fileName;
     cout<<"FileName: "<<endl;
     cin>>fileName;
-    userFile.open(fileName+".cpp");
+    userFile.open(fileName);
     cout<<userFile.is_open();
 
     if(userFile.is_open())
