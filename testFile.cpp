@@ -12,14 +12,14 @@ int main()
     userFile.open(fileName);
     cout<<str(userFile.is_open());
     string line;
-    if(fileName.is_open())
+    if(userFile.is_open())
     {
         cout<<"inside if loop"<<endl;
         while( getline (userFile,line))
         {
             cout<<line<<'\n';
         }
-        fileName.close();
+        userFile.close();
         cout<<"file closed"<<endl;
     }
     return 0;
