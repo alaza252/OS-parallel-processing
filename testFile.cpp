@@ -11,6 +11,7 @@ int main()
     cin>>fileName;
     cout<<fileName<<endl;
     userFile.open(fileName);
+    cout<<"this worked"<<endl;
     cout<<userFile.is_open();
     if(userFile.is_open())
     {
