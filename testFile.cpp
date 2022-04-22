@@ -9,9 +9,9 @@ int main()
     string fileName;
     cout<<"FileName: "<<endl;
     cin>>fileName;
+    cout<<fileName<<endl;
     userFile.open(fileName);
     cout<<userFile.is_open();
-
     if(userFile.is_open())
     {
         userFile.close();
