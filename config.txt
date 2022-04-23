@@ -1,0 +1,9 @@
+example1
+example1
+example2
+example2
+FIFO
+SJF
+RR
+10
+TRUE
